@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Початок головного проєкту</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body style="overflow: hidden;">
+<div class="wrapper">
+  <header class="head" data-aos="zoom-out" data-aos-delay="600">
+    <div class="head__container">
+      <a class="head__logo" href="home.html">Travel.</a>
+      <nav class="head__menu">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="tours.html">tours</a>
+        <a href="dest.html">dest</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <button class="icon-menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__home home" data-aos="zoom-out">
+      <div class="home__container">
+        <form class="home__form form" action="" method="post" data-aos="zoom-in" data-aos-delay="600">
+          <h3>Search your tour</h3>
+          <p>Where to</p>
+          <input class="form__input" type="text" name="location" required maxlength="50" placeholder="enter tour location">
+          <p>when to</p>
+          <input class="form__input" type="date" name="date" required>
+          <p>how many</p>
+          <input class="form__input" type="numder" name="guests" min="1" max="10" required maxlength="2" placeholder="numder of guests">
+          <input class="form__button button" type="sumbit" value="search tour" name="search">
+        </form>
+      </div>
+    </section>
+  </main> 
+
+  <footer class="footer"></footer>
+</div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
